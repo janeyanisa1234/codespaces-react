@@ -2,9 +2,10 @@ import {useRef, useState} from "react";
 const BmiText=({bmi})=>{
     if(bmi<18.5)return(<h1>UnderWeight</h1>);
     if(bmi<18.5)return(<h1>OverWeight</h1>);
-    return(<h1>Normol</h1>);
+    return(<h1>Normal</h1>);
 }
 export default function Bmi(){
+
     const W_input = useRef(null);
     const H_input = useRef(null);
     const [bmi,setBmi]=useState(0.00);
